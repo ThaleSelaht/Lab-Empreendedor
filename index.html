@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Allegro Business Consulting Ltda.</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="angularUiCtrls">
+	<header><img src="img/minified/lab-empreendedor-logo.png" alt="Logo Lab Empreendedor"></header>
+	<section class="sec-1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 bg-sec-1 bg-sec-img"></div>
+				<div class="col-lg-6">
+					<p class="sec-1-txt text-center">
+						<span>CRIE!</span><br>
+						<span class="y-label">PESQUISE!</span><br>
+						<span>TESTE!</span><br>
+						<span class="y-label">EXPERIMENTE!</span><br>
+						<span>INOVE!</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--##### SOBRE NÓS #####-->
+
+	<section class="sec-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<header class="sec-2-h">
+						SOBRE NÓS
+					</header>
+					<p class="sec-2-text mg-top-40px">O LAB <br>
+					Somos um grupo de pesquisadores e entusiastas do empreendedorismo, que desenvolveu um processo que visa COLABORAR com CEO’s, diretores, administradores e demais profissionais que buscam uma forma de posicionar seus projetos no mercado.</p>
+					<p class="sec-2-text">OS “CIENTISTAS”<br>
+					Nosso time é composto por profissionais das mais diversas áreas, que vão desde um especialista em gestão estratégica, passando por economistas, especialistas em recursos humanos, chegando até especialistas em marketing e tecnologia. Todos com larga experiência em administração e com carga empreendedora.</p>
+					<p class="sec-2-text">O PROCESSO <br>
+					Ao inscrever-se em nosso processo, você receberá um material de apoio e acompanhamento para o seu projeto, seja presencial (através de nossa sede e espaços associados), ou à distância (através de nosso programa na internet ou nas emissoras de TV). <br>	
+					Ao final do processo, seu projeto pode receber apoio jurídico, contábil, de marketing, tecnológico, administrativo ou pode até mesmo receber investimento em dinheiro.</p>
+				</div>
+				<div class="col-lg-6 bg-sec-2 bg-sec-img"></div>
+			</div>
+		</div>
+	</section>
+
+	<!--##### FEED #####-->
+
+	<section class="sec-3">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<header class="blue-h">
+						#GoToLAB
+					</header>
+					<span class="sec-3-txt">
+						Inscreva-se para saber mais sobre o processo e para receber informações sobre promoções e eventos.
+					</span>
+					<form class="form-horizontal">
+					<div class="form-group">
+					<div class="col-lg-10">
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Endereço de email">	
+					</div>
+				    
+				    <button type="submit" class="btn btn-default col-lg-2 form-bt">INSCREVER-SE</button>
+				  	</div>
+				  	
+				  	</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--##### EQUIPE #####-->
+
+	<section class="sec-4">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<header class="blue-h">
+						NOSSA EQUIPE
+					</header>
+					<span class="sec-4-txt">
+						Duis quis luctus tortor. Vestibulum consectetur orci sed mi porttitor cursus. Nunc quis consectetur felis.
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<!--##### FORM #####-->
+				<div class="col-lg-6 left-col">
+				<header class="form-h">ENTRE EM CONTATO</header>
+				<form id="formLab" name="formLab" ng-submit="submitForm()" class="row" novalidate>
+				  <div class="col-sm-10 col-lg-offset-1 form-group">
+	                <input ng-model="formData.email" ng-required="true" type="email" class="form-control input-lg" placeholder="Email">
+	              </div>
+	              <div class="col-sm-10 col-lg-offset-1 form-group">
+	                <input ng-model="formData.nome" ng-required="true" type="text" class="form-control input-lg" placeholder="Nome">
+	              </div>
+	              <div class="col-sm-10 col-lg-offset-1 form-group">
+	                <textarea ng-model="formData.mensagem" ng-required="true" class="form-control input-lg" rows="10" placeholder="Mensagem"></textarea>
+	              </div>
+	              <div class="col-sm-10 col-lg-offset-1 form-group">
+	                <input class="btn btn-primary form-bt" type="submit" ng-disabled="formDna.$invalid" value="ENVIAR">
+	              </div>
+	            </form>	
+				</div>
+				<!--##### QUE TAL UM CAFÉ #####-->
+				<div class="col-lg-6 right-col no-padding">
+					<div class="bg-footer-img bg-sec-img"></div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-10 col-lg-offset-1">
+								<header class="footer-main-h">
+									QUE TAL UM CAFÉ?
+								</header>
+								<span class="footer-main-txt">
+									Agende uma visita com a gente! Tomaremos um café fresquinho e conversaremos mais sobre como podemos ser um time.	
+								</span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="col-lg-5 col-lg-offset-1">
+								<header class="footer-second-h">
+								ENDEREÇO	
+								</header>
+								<span class="footer-second-txt">
+									Avenida 9 de Julho, 5229, <br>
+									1º Andar Jardim Paulista, São Paulo - SP <br>
+									+55 11 3195-8713
+								</span>	
+							</div>
+							<div class="col-lg-5">
+								<header class="footer-second-h">
+								ATENDIMENTO	
+								</header>
+								<span class="footer-second-txt">
+									Segunda a sexta: 9 às 17h <br>
+									Sábado: com horário marcado <br>
+									Domingo: fechado
+								</span>		
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--***** SCRIPTS *****-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
