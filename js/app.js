@@ -69,6 +69,7 @@ var angularUiApp = angular.module('angularUiApp',
 		       $scope.formData = {}; 
 		       $scope.submission = true; 
 		       $scope.open();
+		       console.log(data);
 		    });
 		}
 

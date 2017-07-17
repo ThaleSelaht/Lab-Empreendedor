@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="angularUiApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Allegro Business Consulting Ltda.</title>
@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <body ng-controller="angularUiCtrls">
 	<header><img src="img/minified/lab-empreendedor-logo.png" alt="Logo Lab Empreendedor"></header>
@@ -78,7 +80,7 @@
 
 	<!--##### EQUIPE #####-->
 
-	<section class="sec-4">
+	<section class="sec-4 hidden">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
@@ -109,7 +111,7 @@
 	                <textarea ng-model="formData.mensagem" ng-required="true" class="form-control input-lg" rows="10" placeholder="Mensagem"></textarea>
 	              </div>
 	              <div class="col-sm-10 col-lg-offset-1 form-group">
-	                <input class="btn btn-primary form-bt" type="submit" ng-disabled="formDna.$invalid" value="ENVIAR">
+	                <input class="btn btn-primary form-bt" type="submit" ng-disabled="formLab.$invalid" value="ENVIAR">
 	              </div>
 	            </form>	
 				</div>
@@ -154,7 +156,21 @@
 			</div>
 		</div>
 	</footer>
-<!--***** SCRIPTS *****-->
+
+	<!--***** MODAL *****-->
+    <div>
+        <script type="text/ng-template" id="myModalContent.html">
+            <div class="modal-header">
+                <h3 class="modal-title text-center">Hey! Obrigado por entrar em contato. Retornaremos a mensagem em breve.</h3>
+            </div>
+            <div class="modal-body text-center">
+                Se preferir um contato mais rápido, entre em contato conosco pelos telefones.
+            </div>
+
+        </script>
+    </div>
+    <!--***** FIM MODAL *****-->
+	<!--***** SCRIPTS *****-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>

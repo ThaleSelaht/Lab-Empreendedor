@@ -63,7 +63,8 @@ header img{
 }
 /***** SECTION 3 *****/
 .sec-3{
-	background: #FFCC28;
+	background: #FFF;
+	/* background: #FFCC28; */
 	height: 230px;
 }
 .sec-3-txt{
@@ -176,4 +177,29 @@ footer .bg-footer-img {
 
 #formLab{
 	margin-top: 40px;
+}
+
+/*--------------------------------------------------------------------------------- 
+                        MODAL
+----------------------------------------------------------------------------------*/
+.modal-content{
+  padding: 30px;
+  border-radius: 0;
+  /* background: rgba(0, 204, 0, 0.9); */
+  background: rgba(14, 61, 103, 0.75);
+}
+.modal-title{
+  color: #FFF;
+  border-top: solid 5px #FFF;
+  border-bottom: solid 5px #FFF;
+  font-weight: bolder;
+}
+
+.modal-header{
+  border: none;
+}
+
+.modal-body{
+  font-size: 18px;
+  color: #FFF;
 }
