@@ -72,7 +72,20 @@ var angularUiApp = angular.module('angularUiApp',
 		       console.log(data);
 		    });
 		}
-
+		$scope.submitFormCaptacao = function() {
+		    $http({
+		    method : 'POST',
+		    url : 'process-captacao-email.php',
+		    data : param($scope.formDataCaptacao), 
+		    headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
+			})
+		    .then(function(data) {
+		       $scope.formDataCaptacao = {}; 
+		       $scope.submission = true; 
+		       $scope.open();
+		       console.log(data);
+		    });
+		}
 		/*Fim Envio de email via HTTP*/
 });
 
